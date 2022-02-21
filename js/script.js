@@ -4,7 +4,7 @@ let text = quote[Math.round(Math.random()*3)];
 document.getElementById("genarate-text").innerText = text;
 document.addEventListener('keyup',e=>{
     //console.log("hello");
-      if(((/^[a-zA-Z]/.test(e.key) && e.key.length == 1) || e.key == " " )&& text.length>0){
+      if(((/^[a-zA-Z.]/.test(e.key) && e.key.length == 1) || e.key == " " )&& text.length>0){
         const temp = text[0];
        
         text = text.slice(1,);
